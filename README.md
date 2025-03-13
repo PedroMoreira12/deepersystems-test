@@ -26,7 +26,7 @@ This project includes:
    pip install -r requirements.txt
    ```
 
-3. Import data into MongoDB collection named myDatabase:
+3. Import data into MongoDB collection named users in database named myDatabase:
    ```
    python parser.py
    ```
