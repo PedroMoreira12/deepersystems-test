@@ -15,35 +15,48 @@ This project includes:
 
 ### Backend
 1. Navigate to the backend folder:
+   ```
    cd backend
+   ```
 
-2. Create a virtual environment and install dependencies:
+2. Create a virtual environment and install dependencies (LINUX):
+   ```
    python -m venv venv
-      linux: source venv/bin/activate
-      windows: venv/Scripts/activate
+   source venv/bin/activate
    pip install -r requirements.txt
+   ```
 
 3. Import data into MongoDB collection named myDatabase:
+   ```
    python parser.py
+   ```
 
 4. Start the Flask server:
+   ```
    python app.py
+   ```
 
 ### Frontend
 
 1. Navigate to the frontend folder:
+   ```
    cd frontend
+   ```
 
 2. install dependencies:
+   ```
    npm install
+   ```
 
 3. Start the development server:
+   ```
    npm run serve
-
+   ```
 
 # Project Structure
 
-project/
+```
+DEEPERSYSTEMSTEST/
 ├── backend/
 │   ├── app.py
 │   ├── parser.py
@@ -62,3 +75,4 @@ project/
 │   │       └── UserDetail.vue
 |
 └── README.md
+```
