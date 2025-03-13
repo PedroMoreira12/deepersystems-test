@@ -81,23 +81,6 @@ active: true,
 created_ts: Math.floor(Date.now() / 1000)
 })
 
-// Watch user prop and deep clone it to avoid reactivity issues
-// watch(() => props.user, (newVal) => {
-// if (newVal) {
-//   formData.value = structuredClone(newVal) // Deep clone to ensure reactivity
-// } else {
-//   // Reset for creation
-//   formData.value = {
-//     username: '',
-//     password: '',
-//     roles: [],
-//     preferences: { timezone: '' },
-//     active: true,
-//     created_ts: Math.floor(Date.now() / 1000)
-//   }
-// }
-// }, { immediate: true })
-
 function close() {
 dialog.value = false
 emit('close')

@@ -34,6 +34,7 @@ def parse_user_data(json_file):
         
         preferences = UserPreferences(timezone=item["user_timezone"])
         active = item.get("is_user_active", True)
+        
         # Convert ISO date to timestamp
         dt = datetime.fromisoformat(item["created_at"].replace("Z", "+00:00"))
         created_ts = dt.timestamp()
